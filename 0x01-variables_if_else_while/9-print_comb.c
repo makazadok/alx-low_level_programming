@@ -5,14 +5,18 @@
  * Return: be 0 for successful execution
  */
 int main(void)
-{       
-        int i;
+{
+	int i;
+
 	for (i = 0 ; i < 10 ; i++)
-		(
-		 putchar(i);
-		 putchar(',');
-		 putchar(' ');
-		 )
-			putchar('\n')
-			return (0)
+	{
+		putchar(i + '0');
+		if (1 == 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
+	putchar ('\n');
+	return (0);
 }
