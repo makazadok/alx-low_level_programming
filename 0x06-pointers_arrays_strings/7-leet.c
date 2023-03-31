@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * cap_string - encodes a string
- * @str: a fuction parameter
+ * leet - encodes a string
+ * @n: a fuction parameter
  * Return: return string
  */
-char *cap_string(char *str)
+char *leet(char *n)
 {
 	int i;
 	int j;
@@ -12,13 +12,13 @@ char *cap_string(char *str)
 	char *a = "aAeEoOtTlL";
 	char *b = "4433007711";
 
-	for (i = 0 ; str[i] != '\0' ; i++)
+	for (i = 0 ; n[i] != '\0' ; i++)
 	{
 		for (j = 0 ; a[j] != '\0' ; j++)
 		{
-			if (str[i] == a[j])
-				str[i] = b[j];
+			if (n[i] == a[j])
+				n[i] = b[j];
 		}
 	}
-	return (str);
+	return (n);
 }
